@@ -10,7 +10,7 @@ import requests
 from ..cache import Cache
 from ..models import IOC, ProviderResult
 
-USER_AGENT = "ioc-enricher/1.0 (+https://github.com/)"
+USER_AGENT = "ioc-enricher/1.0 (+https://github.com/leenadeeb/ioc-enricher/)"
 
 
 _THROTTLE: dict[str, float] = {}
