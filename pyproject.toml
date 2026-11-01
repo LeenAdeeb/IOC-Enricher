@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ioc-enricher"
+dynamic = ["version"]
+description = "IOC enrichment and explainable APT attribution (MITRE ATT&CK + MISP Galaxy)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["requests>=2.31", "python-dotenv>=1.0"]
+keywords = ["threat-intelligence", "ioc", "apt", "mitre-attack", "dfir", "cti"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "responses>=0.25"]
+
+[project.scripts]
+ioc-enricher = "ioc_enricher.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "ioc_enricher.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["ioc_enricher*"]
+
+[tool.setuptools.package-data]
+ioc_enricher = ["data/*.json"]

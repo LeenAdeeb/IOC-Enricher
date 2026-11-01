@@ -1,0 +1,17 @@
+IOC-Enricher - third-party data and services
+
+MITRE ATT&CK(R)
+  ioc_enricher/data/groups.json is derived from MITRE ATT&CK Enterprise data.
+  (c) The MITRE Corporation. This work is reproduced and distributed with the permission of
+  The MITRE Corporation. MITRE ATT&CK(R) is a registered trademark of The MITRE Corporation.
+  Terms of Use: https://attack.mitre.org/resources/legal-and-branding/terms-of-use/
+
+MISP Galaxy
+  Threat-actor aliases and country data are merged from the MISP Galaxy threat-actor cluster
+  (https://github.com/MISP/misp-galaxy), distributed under CC0 / the galaxy project's licence.
+
+Third-party APIs
+  VirusTotal, AbuseIPDB, Shodan, AlienVault OTX, abuse.ch (ThreatFox, URLhaus, MalwareBazaar),
+  crt.sh, urlscan.io, Censys and FOFA are independent services. You are responsible for
+  complying with each provider's terms of service, rate limits and data-sharing rules.
+  The demo data in this repository is synthetic and describes no real infrastructure.
